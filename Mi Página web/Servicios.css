@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin:0px;
+    padding:0px;
+}
+/*banner animado*/
+.banner{
+    
+  width: 100%;
+  padding-bottom: 200px;
+  height: 100%;
+  animation: banner 10s infinite linear alternate;
+  background-size: 100% 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Animacion banner*/
+@keyframes banner{
+  0%, 20%{
+      background-image: url(Imágenes/donas.jpg);
+  }
+  25%, 45%{
+        background-image: url(Imágenes/variedad.jpg);
+  }
+  50%, 70%{
+      background-image: url(Imágenes/pasteles.jpg);
+  }
+  75%, 100%{
+      background-image: url(Imágenes/banner-panaderia.jpg);
+  }
+}
+/*Estilos banner*/
+.capa{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.6);
+}
+.info{
+  margin-top: 150px;
+  z-index: 1;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+}
+.info h1{
+  color: #fff;
+  font-size: 45px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+.info p{
+  color: #c7c7c7;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+.info a{
+  color: #fff;
+  text-decoration: none;
+  background-color: #3088e0;
+  padding: 16px 37px;
+  margin-bottom: 20px;
+  display: inline-block;
+  border-radius: 50px;
+}
+        
+        /* TOGGLE */
+        .header {
+            background-color: burlywood;
+            height: 80px;
+            position: sticky;
+            z-index: 1;
+            width: 100%;
+            top: 0;
+            left: 0;
+          }
+          
+          .nav {
+            display: flex;
+            justify-content: space-between;
+          
+            max-width: 992px;
+            margin: 0 auto;
+          }
+          
+          .nav-link {
+            color: white;
+            text-decoration: none;
+          }
+          
+          .nav-menu {
+            display: flex;
+            margin-right: 40px;
+            list-style: none;
+          }
+          
+          .nav-menu-item {
+            font-size: 18px;
+            margin: 0 10px;
+            line-height: 80px;
+            text-transform: uppercase;
+            width: max-content;
+          }
+          
+          .nav-menu-link {
+            padding: 8px 12px;
+            border-radius: 3px;
+          }
+          
+          .nav-menu-link:hover,
+          .nav-menu-link_active {
+            background-color: #034574;
+            transition: 0.5s;
+          }
+
+  .nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+  }
+  
+/* resto de la pagina*/
+p{
+   
+    text-align: center;
+    font-family: 'Times New Roman', Arial;
+    font-size: 25px;
+}
+img{
+  border-radius: 10px;
+  width: 100px;
+  height: 80px;
+}
+
+h2{
+    text-align: center;
+    font-size: 2.5em;
+    color: rgb(243, 179, 95);
+    text-shadow: 2px 2px 2px #0a141d;
+}
+
+/*Img Hover*/
+.contenedor{
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+ }
+ .contenedor figure{
+     position: relative;
+     width: 430px;
+     height: 270px;
+     overflow: hidden;
+     border-radius: 10px
+     rgba(0,0,0,0.50 );
+     cursor: pointer;
+ }
+ .contenedor figure img{
+     width: 100%;
+     height: 100%;
+     transition: all 500ms ease-out;
+ }
+ .contenedor figure .cap{
+    border-radius: 10px;
+ position: absolute;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ background-color: #123f;
+ transition: all 500ms ease-out;
+ opacity: 0;
+ visibility: visible;
+ text-align: center;
+ }
+ .contenedor figure:hover > .cap{
+     opacity: 1;
+     visibility: visible;
+ }
+ .contenedor figure:hover > .cap h3{  
+     margin-top: 70px;
+     margin-bottom: 15px;
+ }
+ .contenedor figure .cap h3{
+     color: #fff;
+     font-weight: 400px;
+     margin-bottom: 120px;
+     transition: all 500ms ease-out;
+     margin-top: 20px;
+ }
+ .contenedor figure .cap p{
+     color: #fff;
+     font-size: 15px;
+     line-height: 1.5;
+     width: 100%;
+     max-width: 220px;
+     margin: auto;
+ }
+ .cap p,h3{
+   font-family: 'Times New Roman', Arial;
+ }
+  /* Footer*/
+  .pie-pagina{
+    margin-top: 50px;
+    margin-left: 0;
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo1{
+   width: 100%;
+   max-width: 1200px;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 50px;
+   padding: 45px 0px;
+}
+
+
+.pie-pagina .grupo1 .box figure img{
+   width: 250px;
+}
+.pie-pagina .grupo1 .box h2{
+color: #fff;
+margin-bottom: 25px;
+font-size: 20px;
+}
+.pie-pagina .grupo1 .box p{
+   color: #efefef;
+   margin-bottom: 10px;
+}
+.pie-pagina .grupo1 .red-social a{
+   display: inline-block;
+   text-decoration: none;
+   width: 45px;
+   height: 45px;
+   line-height: 45px;
+   color: #fff;
+   margin-right: 10px;
+   background-color: #0d2033;
+   text-align: center;
+   transition: all 300ms ease;
+}
+.pie-pagina .grupo1 .red-social a:hover{
+   color: aqua;
+}
+.pie-pagina .grupo2{
+   background-color: #0a1a2a;
+   padding: 15px 10px;
+   text-align: center;
+   color: white;
+}
+.pie-pagina .grupo2 small{
+   font-size: 15px;
+}
+
+
+/*Mapa*/
+iframe{
+    margin-left:-35px;
+    }
+/*formulario*/
+
+form{
+   width:300px;
+   padding:16px;
+   border-radius:10px;
+   margin-top: 10px;
+   margin-left: 10%;
+   color: #fff;
+
+}
+
+
+form label{
+   margin-top: 12px;
+   width:72px;
+   font-weight:bold;
+   display:inline-block;
+   color: #fff;
+}
+
+form input[type="text"],
+form input[type="email"]{
+   width:180px;
+   padding:3px 10px;
+   border:1px solid #f6f6f6;
+   border-radius:3px;
+   background-color:#f6f6f6;
+   margin:8px 0;
+   display:inline-block;
+}
+
+.enviar{
+   text-align: center;
+   text-decoration: none;
+   width:100%;
+   padding:8px 16px;
+   margin-top:25px;
+   border:1px solid #000;
+   border-radius:5px;
+   display:block;
+   color:#fff;
+   background-color: #000;
+} 
+
+form input[type="submit"]:hover{
+   cursor:pointer;
+}
+
+
+textarea{
+   width:100%;
+   height:100px;
+   border:1px solid #f6f6f6;
+   border-radius:3px;
+   background-color:#f6f6f6;			
+   margin:8px 0;
+   resize:none;
+   display:block;
+}
+
+/*Footer responsive*/
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo1{
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+/* Toogle MOBILE */
+@media (max-width: 768px) {
+    .header {
+        background-color: burlywood;
+        height: 80px;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 60px;
+        top: 0;
+        left: 0;
+      }
+    
+    .nav-menu {
+      position: fixed;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: #2c3e50;
+      top: 60px;
+      width: 100%;
+      padding: 20px 0;
+      left: 100%;
+    }
+  
+    .nav-menu-item {
+      line-height: 70px;
+    }
+  
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+      background: none;
+      color: #83c5f7;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-menu_visible {
+      left: 0;
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+    .contenedor{
+        margin-left: 10%;
+        position: relative;
+    }
+    img{
+      width: 60px;
+      height: 50px;
+  }
+    .pie-pagina iframe{
+        width:  0;
+        height: 0;
+    }
+    .pie-pagina{
+        margin-top: 100px;
+    }
+  }
