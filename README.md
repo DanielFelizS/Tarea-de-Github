@@ -10,4 +10,4 @@ Este es un texto de práctica para que mi maestro me coloque mi calificación.
 - git add
 - git log
 
-####entre otros comandos
+#### entre otros comandos
